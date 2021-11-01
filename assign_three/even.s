@@ -31,7 +31,6 @@ here ADD R0, R0, #4 ;pointing to the next array element
 	BNE loop ;looping until every array element has been considered
 
 	MOV R0, R8 ;the largest array element
-	
 	BL printMsg
 stop B stop ;stop program
 	ENDFUNC
