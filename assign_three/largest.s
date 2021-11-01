@@ -4,7 +4,7 @@
 	IMPORT printMsg	
 	ENTRY
 __main  FUNCTION
-	MOV R0, #0x20000000 ;memory location corresponding to the first number
+	MOV R0, #0x30000000 ;memory location corresponding to the first number
 	
 	MOV R1, #0x00000001 ;first number
 	MOV R2, #0x00000007 ;second number
