@@ -4,21 +4,21 @@
 	IMPORT printMsg	
 	ENTRY
 __main  FUNCTION
-	MOV R0, #0x30000000 ;memory location corresponding to the first number
+	MOV R0, #0x20000000 ;memory location corresponding to the first number
 	
-	MOV R1, #0x00000001 ;first number
-	MOV R2, #0x00000007 ;second number
-	MOV R3, #0x00000002 ;third number
+	MOV R1, #1 ;first number
+	MOV R2, #7 ;second number
+	MOV R3, #2 ;third number
 	
 	STR R1, [R0]
-	STR R2, [R0, #0x00000004]
-	STR R3, [R0, #0x00000008]
+	STR R2, [R0, #4]
+	STR R3, [R0, #8]
 
 	;successive memory location is 4 bytes away, since memory is byte-addressable
 
 	LDR R4, [R0]
-	LDR R5, [R0, #0x00000004]
-	LDR R6, [R0, #0x00000008]
+	LDR R5, [R0, #4]
+	LDR R6, [R0, #8]
 	
 	CMP R4, R5
 	ITE GE
