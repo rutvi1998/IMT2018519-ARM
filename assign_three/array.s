@@ -34,7 +34,6 @@ loop LDR R8, [R0]
 	BNE loop ;looping until every array element has been considered
 
 	MOV R0, R7 ;the largest array element
-	
 	BL printMsg
 stop B stop ;stop program
 	ENDFUNC
