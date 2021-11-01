@@ -31,7 +31,6 @@ __main  FUNCTION
 	MOVLT R8, R6 ;if the largest number so far is lesser than or equal to the third number, the third number will be the largest of the three numbers 
 	
 	MOV R0, R8 ;the largest of the three numbers
-	
 	BL printMsg
 stop B stop ;stop program
 	ENDFUNC
