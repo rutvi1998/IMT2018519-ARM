@@ -14,7 +14,7 @@ __main  FUNCTION
 	STR R2, [R0, #0x00000004]
 	STR R3, [R0, #0x00000008]
 
-	;successive memory location 4 bytes away, since memory is byte-addressable
+	;successive memory location is 4 bytes away, since memory is byte-addressable
 
 	LDR R4, [R0]
 	LDR R5, [R0, #0x00000004]
